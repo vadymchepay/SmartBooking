@@ -1,0 +1,41 @@
+nz-header {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #fff;
+}
+
+.ant-menu {
+    margin-left: 64px;         
+    .ant-menu-item {
+        height: 100%;
+        line-height: 64px;
+    }
+}
+
+.user-menu {
+    width: 220px;
+    margin-left: auto;
+    ul {
+        display: flex;
+
+
+     }
+}
+
+.ant-menu-item {
+    .anticon {
+        margin: 0;
+        font-size: 16px
+    }
+}
+
+.ant-avatar {
+    .anticon {
+        margin: 0;
+        font-size: 16px
+    } 
+}
+
+nz-content {
+    padding: 34px 27px;
+}

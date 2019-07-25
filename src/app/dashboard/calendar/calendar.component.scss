@@ -1,0 +1,31 @@
+.row-title {
+    padding-left: 22px;
+}
+
+.filters-container {
+    margin-bottom: 30px;
+}
+
+.table-container {
+    margin-top: 12px;    
+    padding: 34px 22px;
+    background-color: #fff;
+
+}
+
+.filter-label {
+    margin-bottom: 9px;
+}
+
+nz-picker {
+    width: 100%;
+
+    .ant-calendar-picker {
+        width: 100%;
+    }
+}
+
+.filter-btn {
+    margin-top: 30px;
+}
+
