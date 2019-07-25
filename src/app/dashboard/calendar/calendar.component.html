@@ -1,0 +1,61 @@
+<div nz-row nzGutter="22">
+        <div nz-col class="gutter-row" nzSpan="4">
+            <div class="row-title">
+                <h3>Создание новой брони</h3>
+            </div>
+        </div>
+        <div nz-col class="gutter-row" nzSpan="20">
+            <div class="steps-container">
+                <nz-steps [nzCurrent]="1">
+                        <nz-step nzDescription="1"></nz-step>
+                        <nz-step nzDescription="2"></nz-step>
+                        <nz-step nzDescription="3"></nz-step>
+                        <nz-step nzDescription="4"></nz-step>
+                </nz-steps>
+            </div>
+        </div>
+</div>
+<div class="table-container">
+    <div class="filters-container">
+        <div nz-row nzGutter="22">
+                <div nz-col class="gutter-row" nzSpan="4">
+                    <div class="filter-label">Выберите источник</div>
+                    <div>
+                            <nz-select style="width: 100%;" [(ngModel)]="selectSource" nzAllowClear nzPlaceHolder="Choose">
+                              <nz-option nzValue="Source1" nzLabel="Source1"></nz-option>
+                              <nz-option nzValue="Source2" nzLabel="Source2"></nz-option>
+                              <nz-option nzValue="Source3" nzLabel="Source3"></nz-option>
+                            </nz-select>
+                           
+                    </div>
+                </div>
+                <div nz-col class="gutter-row" nzSpan="4">
+                    <div class="filter-label">Дата заезда</div>
+                    <nz-date-picker [(ngModel)]="StartDate" (ngModelChange)="onStartDate($event)"></nz-date-picker>
+                </div>
+                <div nz-col class="gutter-row" nzSpan="4">
+                    <div class="filter-label">Дата выезда</div>
+                    <nz-date-picker [(ngModel)]="EndDate" (ngModelChange)="onEndDate($event)"></nz-date-picker>
+                </div>
+                <div nz-col class="gutter-row" nzSpan="4">
+                    <div class="filter-label">Тарифный план</div>
+                    <nz-select style="width: 100%;" [(ngModel)]="selectTarif" nzAllowClear nzPlaceHolder="Choose">
+                            <nz-option nzValue="Source1" nzLabel="Source1"></nz-option>
+                            <nz-option nzValue="Source2" nzLabel="Source2"></nz-option>
+                            <nz-option nzValue="Source3" nzLabel="Source3"></nz-option>
+                          </nz-select>
+                </div>
+                <div nz-col class="gutter-row" nzSpan="4">
+                    <div class="filter-label">Тип номера</div>
+                    <nz-select style="width: 100%;" [(ngModel)]="selectRoom" nzAllowClear nzPlaceHolder="Choose">
+                            <nz-option nzValue="Source1" nzLabel="Source1"></nz-option>
+                            <nz-option nzValue="Source2" nzLabel="Source2"></nz-option>
+                            <nz-option nzValue="Source3" nzLabel="Source3"></nz-option>
+                          </nz-select>
+                </div>
+                <div nz-col class="gutter-row" nzSpan="4">
+                    <button nz-button nzType="primary" nzBlock>Поиск</button>
+                </div>
+        </div>
+    </div>
+</div>
